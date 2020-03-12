@@ -21,7 +21,7 @@ nav {
     width: 63%;
     padding: 1%;
 }
-figure {
+header figure {
     background-color: chocolate;
     padding: 1%;
     display: block;
@@ -31,19 +31,16 @@ img {
     width: 100%;
 }
 
-.caja-article-img, .caja-article-txt{
+article {
     border: 1px solid blue;
+}
+
+article figure, article main {
     display: inline-block;
     vertical-align: top;
+    border: 1px solid red;
 }
-.caja-article-img {
-    width: 30%;
-}
-.caja-article-txt {
-    width: 55%;
-    padding: 3%;
-    margin-top: 0.75%;
-}
+
 
 table, th, td {
     border: 1px solid black;
