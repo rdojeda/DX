@@ -1,0 +1,50 @@
+header, main, footer {
+    border: 2px solid blue;
+    padding: 1%;
+    width: 100%;
+}
+
+
+h1, nav {
+    display: inline-block;
+
+}
+
+h1 {
+    background-color: brown;
+    width: 30%;
+    padding: 1%;
+    
+}
+nav {
+    background-color: chartreuse;
+    width: 63%;
+    padding: 1%;
+}
+figure {
+    background-color: chocolate;
+    padding: 1%;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+.caja-article-img, .caja-article-txt{
+    border: 1px solid blue;
+    display: inline-block;
+    vertical-align: top;
+}
+.caja-article-img {
+    width: 30%;
+}
+.caja-article-txt {
+    width: 55%;
+    padding: 3%;
+    margin-top: 0.75%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
