@@ -1,47 +1,42 @@
-header, main, footer {
-    border: 2px solid blue;
-    padding: 1%;
-    width: 100%;
+:root {
+    font-size: 62.5%;
 }
-
-
-h1, nav {
-    display: inline-block;
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #232323;
+    font-size: 1.5rem;
+}
+header {
+    background-color: #232323;
+    padding: 2rem;
+    overflow: auto;
 }
 
 h1 {
-    background-color: brown;
-    width: 30%;
     padding: 1%;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    float: left;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    padding-left: 10.25rem;
+    background-size: contain;
+}
+
+nav{
+   float: right;
+   margin-top: 1.25rem;
+}
+
+nav li{
+    display: inline;
+    margin: 0 1rem;
     
 }
-nav {
-    background-color: chartreuse;
-    width: 63%;
-    padding: 1%;
-}
-header figure {
-    background-color: chocolate;
-    padding: 1%;
-    display: block;
+nav li a{
+    color:#fff;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
-img {
-    width: 100%;
-}
-
-article {
-    border: 1px solid blue;
-}
-
-article figure, article main {
-    display: inline-block;
-    vertical-align: top;
-    border: 1px solid red;
-}
-
-
-table, th, td {
-    border: 1px solid black;
-}
