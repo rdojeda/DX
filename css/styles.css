@@ -6,6 +6,9 @@ body {
     color: #232323;
     font-size: 1.5rem;
 }
+/********************
+        Header
+*********************/
 header {
     background-color: #232323;
     padding: 2rem;
@@ -23,20 +26,37 @@ h1 {
     padding-left: 10.25rem;
     background-size: contain;
 }
-
+/*Navbar-Header*/
 nav{
    float: right;
    margin-top: 1.25rem;
 }
-
 nav li{
     display: inline;
     margin: 0 1rem;
-    
 }
 nav li a{
     color:#fff;
     font-size: 1.5rem;
     text-decoration: none;
 }
-
+/********************
+        Main
+*********************/
+main {
+    display: block;
+    margin: 0;
+}
+figure{
+    display: block;
+    margin: 0;
+}
+figure img {
+    width: 100%;
+}
+figure figcaption h2{
+    background-color: #232323;
+    padding: 2.5rem;
+    color: white;
+    font-size: 3rem;
+}
