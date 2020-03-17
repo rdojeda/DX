@@ -45,16 +45,22 @@ nav li a{
         Main
 *********************/
 figure{
-    display: block;
     margin: 0;
 }
 figure img {
+    display: block;
     width: 100%;
 }
-figure figcaption h2{
+
+figure figcaption {
     background-color: #232323;
-    padding: 2.5rem;
+    
+}
+
+figure h2 {
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 1.5rem;
     line-height: 1;
 }
