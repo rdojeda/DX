@@ -5,6 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #232323;
     font-size: 1.5rem;
+    line-height: 0;
 }
 /********************
         Header
@@ -43,10 +44,6 @@ nav li a{
 /********************
         Main
 *********************/
-main {
-    display: block;
-    margin: 0;
-}
 figure{
     display: block;
     margin: 0;
@@ -59,4 +56,5 @@ figure figcaption h2{
     padding: 2.5rem;
     color: white;
     font-size: 3rem;
+    line-height: 1;
 }
