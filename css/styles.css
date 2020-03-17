@@ -51,12 +51,9 @@ figure img {
     display: block;
     width: 100%;
 }
-
 figure figcaption {
     background-color: #232323;
-    
-}
-
+ }
 figure h2 {
     color: white;
     font-size: 4rem;
