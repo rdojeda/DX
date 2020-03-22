@@ -1,18 +1,20 @@
 :root {
     font-size: 62.5%;
 }
+/*
 * {
     outline: dotted 1px red;
 }
+*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #232323;
     font-size: 1.5rem;
     overflow-x: hidden;
 }
-/*******************************
-        HEADER 
-********************************/
+/****************
+    HEADER
+*******************/
 header {
     background-color: #232323;
     padding: 2rem;
@@ -28,7 +30,7 @@ h1 {
     background-size: contain;
     padding-left: 6rem;
 }
-/*********NAVIGATION ********/
+/***Navigation**/
 nav {
     float: right;
     margin-top: 0.5rem;
@@ -42,23 +44,25 @@ nav li a {
     text-decoration: none;
 }
 /************************
-    MAIN
+         MAIN
 ************************/
 
-/****** SECTION NOTICIAS DESTACADAS *********/
+/******Section Noticias Destacadas - Carrousel*****/
 #noticias-destacadas {
-    width: 300vw;
+    width:300vw;
+    display: flex;
     overflow: auto;
-    animation: 20s slider infinite;
-}
-figure {
-    float: left;
-    width: 100vw;
-}
-figure img {
-    display: block;
-    width: 100%;
-}
+    animation: slider 20s infinite alternate;
+    animation-timing-function: linear;
+ }
+ figure {
+     width: 100vw;
+ }
+ 
+ img {
+     display: block;
+     width: 100%;
+ }
 figure figcaption {
     background-color: #232323;
 }
@@ -70,6 +74,105 @@ figure h2 {
     line-height: 100%;
 }
 
+/**************Section Noticias - Articles ****/
+.noticia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* flext-start | flex-end | center | space-between | space-around | */
+    align-items: center; /* flex-start | flex-end | center | stretch */
+    min-height: 15rem;
+}
+.noticia-img {
+    width: 30%;
+}
+.noticia-txt {
+    width: 65%;
+}
+.noticia-txt h3 {
+    font-weight: bold;
+    font-size: 2.3rem;
+    line-height: 110%;
+}
+.noticia-txt p:nth-of-type(1) {
+    line-height: 200%;
+    padding-top: 0.4rem;
+}
+.noticia-txt p:nth-of-type(1) a {
+    text-decoration: none;
+    color: darkslategrey;
+}
+.noticia-txt p:nth-of-type(2){
+    padding-top: 2rem;
+    color: darkslategrey;
+    line-height: 1.3;
+}
+article{
+    margin: 2rem 0;
+}
+/****************Section Tabla de Resultados************/
+#tabla-resultados{
+    margin-top: 6rem;
+}
+
+#tabla-resultados table{
+    margin: auto;
+    width: 60%;
+    padding: 0.25rem;
+    
+}
+#tabla-resultados table caption{
+    background-color: red;
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+#tabla-resultados table th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.25rem;
+    vertical-align: middle;
+    background-color: #E0FFFF;
+}
+
+#tabla-resultados tr, td {
+    background-color: #E0FFFF;
+    padding: 0.5rem;
+}
+
+#tabla-resultados table th, tr:nth-child(2n+2){
+    border-bottom: 1px solid #00FFFF;
+}
+
+#tabla-resultados table tr td:nth-child(2n+1){
+    padding-bottom: 1rem;
+    
+}
+
+table td span{
+    color: #191970;
+    font-weight: bold;
+}
+table td {
+    color: darkslategrey;
+}
+
+/************************
+        FOOTER
+*************************/
+footer {
+    margin-top: 10rem;
+    display: block;
+    background-color: #2f2f2f;
+    padding: 1rem;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #fff;
+}
+
+/*******Animaciones Carrousel de imagenes - Noticias Destacadas *******/
 @keyframes slider {
     0% { margin-left: 0 }
     20% { margin-left: 0 }
@@ -80,12 +183,3 @@ figure h2 {
     80% { margin-left: -200vw }
     100% { margin-left: -200vw }
 }
-/***************SECTION ULTIMAS NOTICIAS ***********************/
-
-
-/***************TABLA DE RESULTADOS ****************************/
-
-
-/***********************************
-        FOOTER
-************************************/
