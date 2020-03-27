@@ -54,6 +54,7 @@ nav li a {
     overflow: auto;
     animation: slider 20s infinite alternate;
     animation-timing-function: linear;
+
  }
 figure {
      width: 100vw;
@@ -189,4 +190,56 @@ footer {
 
     80% { margin-left: -200vw }
     100% { margin-left: -200vw }
+}
+
+
+/***********************************************************
+                    MEDIA QUERYES 
+************************************************************/
+button {
+    display:none;
+}
+
+@media screen and (max-width: 600px) {
+    /* Inicio @media-query*/
+        .noticia {
+            flex-direction: column;
+            padding: 1rem;
+        }
+        .noticia-img {
+            width: 100%;
+        }
+        .noticia-txt {
+            width: 100%;
+            padding: 1rem;
+        }
+        nav {
+            display:none;
+            float: none;
+            clear: left;
+            margin-top: 1rem;
+            padding-top: 1.25rem;
+        }
+        nav ul li {
+            display: block;
+            line-height: 2.5rem;
+            text-align: center;   
+        }
+        button {
+            display: block;
+            float: right;
+            color: white;
+            font-size: 3rem;
+            line-height: 0.75;
+            background-color: transparent;
+            border: none;
+
+        }
+        button:focus + nav{
+            display: block;
+        }
+       
+
+    /* Fin @media-query*/
+
 }
