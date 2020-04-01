@@ -22,7 +22,7 @@ header {
 }
 h1 {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #FFF;
     float: left;
     background-image: url("../img/logo.png");
@@ -30,6 +30,17 @@ h1 {
     background-size: contain;
     padding-left: 6rem;
 }
+
+header a {
+    color: #FFFFFF;
+    padding: 0.15rem;
+    display: block;
+}
+header a:hover{
+    background-color: #FFFFFF;
+    color: #232323;
+}
+
 /******   Navigation  ******/
 nav {
     float: right;
@@ -43,6 +54,11 @@ nav li a {
     color: #FFF;
     text-decoration: none;
 }
+
+button {
+    display:none;
+}
+
 /****************************************************************
                          MAIN
 *****************************************************************/
@@ -193,13 +209,10 @@ footer {
 }
 
 
-/***********************************************************
-                    MEDIA QUERYES 
-************************************************************/
-button {
-    display:none;
-}
 
+/***********************************************************
+                    @MEDIA QUERY 
+************************************************************/
 @media screen and (max-width: 600px) {
     /* Inicio @media-query*/
         .noticia {
@@ -238,8 +251,7 @@ button {
         button:focus + nav{
             display: block;
         }
-       
-
-    /* Fin @media-query*/
+ 
+        /* Fin @media-query*/
 
 }
